@@ -23,7 +23,6 @@ class BestSellingRvAdapter(val adapterListener: RvAdapterListener): ListAdapter<
             adapterListener.onClickRvItem(groceryItem)
         }
 
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BestSellingItemViewHolder {

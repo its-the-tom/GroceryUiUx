@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.RecyclerView
 import com.itsthetom.grocery.R
 import com.itsthetom.grocery.databinding.FragmentHomeBinding
 import com.itsthetom.grocery.model.DummyData
@@ -60,13 +61,10 @@ class HomeFragment : Fragment(),RvAdapterListener{
 
 
     //  Initliazing Best Selling Groceryes Recycler View
-
         bestSellingRvAdapter= BestSellingRvAdapter(this)
         bestSellingRvAdapter.submitList(DummyData.bestSellingList.toList())
         binding.rvBestSellingGrocries.adapter=bestSellingRvAdapter
         binding.rvBestSellingGrocries.setHasFixedSize(true)
-
-
 
     }
 

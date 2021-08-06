@@ -21,12 +21,10 @@ class GroceryDetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         binding= FragmentGroceryDetailBinding.inflate(inflater)
 
 //      Now can update with this grocery item data
         groceryItem = arguments?.getParcelable(Constants.GROCERY_ITEM)!!
-
 
         initUi()
 
@@ -36,7 +34,6 @@ class GroceryDetailFragment : Fragment() {
     private fun initUi() {
 
         binding.tvGroceryName.text=groceryItem.name
-
 
 //      Setting up Grocery Images Slider
         imageSliderAdapter= ImageSliderAdapter()

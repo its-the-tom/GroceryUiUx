@@ -26,7 +26,6 @@ class ImageSliderAdapter:SliderViewAdapter<ImageSliderAdapter.SliderAdapterVH>()
 
     override fun onBindViewHolder(viewHolder: SliderAdapterVH, position: Int) {
         viewHolder.binding.ivBackgroundImage.setImageResource(groceryImagesList[position])
-
     }
 
     override fun getCount():Int{
@@ -35,7 +34,6 @@ class ImageSliderAdapter:SliderViewAdapter<ImageSliderAdapter.SliderAdapterVH>()
 
     inner class SliderAdapterVH(itemView: View) : ViewHolder(itemView) {
         val binding=LayoutImageSliderMdItemBinding.bind(itemView)
-
     }
 
     private fun makeDummyImageOfGrocery(groceryItem:GroceryItem):List<Int>{

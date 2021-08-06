@@ -31,7 +31,6 @@ class ExOfferRvAdapter(val rvAdapterListener: RvAdapterListener) : ListAdapter<G
         return ExOfferItemViewHolder(view)
     }
 
-
     fun submitList(newItemList: ArrayList<GroceryItem>){
         itemList.clear()
         itemList.addAll(newItemList)
